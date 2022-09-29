@@ -1,0 +1,215 @@
+:root {
+    --base-color: #3f3352;
+    --overlayH: 263;
+    --overlayS: 23%;
+    --overlayL: 26%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--base-color);
+    padding: 1rem;
+    margin: 0;
+    min-height: 110vh;
+    line-height: 1.6;
+    font-family: muli, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.125rem;
+}
+
+h2,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    font-family: eloquent-jf-pro, serif;
+    font-weight: 400;
+    line-height: 1.125;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+button {
+    font-family: inherit;
+    background: hsl(var(--overlayH), var(--overlayS), var(--overlayL));
+    color: white;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-inline {
+    padding: 0;
+    display: inline;
+    background: transparent;
+    color: inherit;
+    text-decoration: underline;
+}
+
+main {
+    visibility: hidden;
+}
+
+main {
+    max-width: 1400px;
+    margin: 1.5rem auto;
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 800px) {
+    main {
+        grid-template-columns: 1fr 3fr;
+        gap: 2rem;
+    }
+}
+
+img,
+a {
+    display: block;
+    height: 100%;
+}
+
+article a {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(16rem, max-content);
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.grid article {
+    --max: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+article:not(.details) button,
+article:first-child button {
+    display: none;
+}
+
+article:first-child p:last-of-type {
+    margin: 0;
+}
+
+.description {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(1rem, 2.5vmin, 2.25rem);
+}
+
+article.details {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.description {
+    background: linear-gradient(0deg,
+            hsl(var(--overlayH), var(--overlayS), var(--overlayL), calc(1 * var(--max))) 0%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.738 * var(--max))) 19%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.541 * var(--max))) 34%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.382 * var(--max))) 47%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.278 * var(--max))) 56.5%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.194 * var(--max))) 65%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.126 * var(--max))) 73%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.075 * var(--max))) 80.2%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.042 * var(--max))) 86.1%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.021 * var(--max))) 91%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.008 * var(--max))) 95.2%,
+            hsla(var(--overlayH),
+                var(--overlayS),
+                var(--overlayL),
+                calc(0.002 * var(--max))) 98.2%,
+            hsla(var(--overlayH), var(--overlayS), var(--overlayL), 0) 100%);
+}
+
+.details-view {
+    color: white;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.article-6 {
+    --overlayH: 47;
+    --overlayS: 92%;
+    --overlayL: 32%;
+}
+
+.article-2 {
+    --overlayH: 353;
+    --overlayS: 34%;
+    --overlayL: 58%;
+}
+
+.article-5 {
+    --overlayH: 136;
+    --overlayS: 62%;
+    --overlayL: 25%;
+    --overlayH: 176;
+    --overlayS: 49%;
+    --overlayL: 16%;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Let's try Flip by GreenSock</h1>
+                <p>
+                    In this CodePen, I use Flip to animate changes in the
+                    <code>grid</code> property. I also tried to alter the
+                    initial DOM structure, by moving an element to the top of
+                    the list. What about sorting? Let's display the items in the
+                    <button
+                        type="button"
+                        id="alpha-order"
+                        class="button-inline"
+                    >
+                        alphabetical order.
+                    </button>
+                </p>
+            </header>
+            <div class="grid">
+                <article class="article article-1">
+                    <a href="#">
+                        <img
+                            src="https://images.unsplash.com/photo-1429087969512-1e85aab2683d?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDc5NDgwMA&ixlib=rb-1.2.1&q=85&w=600"
+                            alt=""
+                        />
+                    </a>
+                    <section class="description">
+                        <h2>Dearest Diary</h2>
+                        <div class="details-view">
+                            <p>
+                                Ginger is a flowering plant whose rhizome,
+                                ginger root or ginger, is widely used as a spice
+                                and a folk medicine.
+                            </p>
+                            <button type="button">Move to top</button>
+                        </div>
+                    </section>
+                </article>
+                <article class="article article-2">
+                    <a href="#">
+                        <img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/fbanijhrol4-annie-spratt-776x951.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <section class="description">
+                        <h2>Window Sill?</h2>
+                        <div class="details-view">
+                            <p>
+                                Ginger is a flowering plant whose rhizome,
+                                ginger root or ginger, is widely used as a spice
+                                and a folk medicine.
+                            </p>
+                            <button type="button">Move to top</button>
+                        </div>
+                    </section>
+                </article>
+                <article class="article article-3">
+                    <a href="#">
+                        <img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/2rm8p0rkxiw-marius-masalar-776x582.jpg"
+                            alt=""
+                        />
+                    </a>
+
+                    <section class="description">
+                        <h2>Listen To Me</h2>
+                        <div class="details-view">
+                            <p>
+                                Ginger is a flowering plant whose rhizome,
+                                ginger root or ginger, is widely used as a spice
+                                and a folk medicine.
+                            </p>
+                            <button type="button">Move to top</button>
+                        </div>
+                    </section>
+                </article>
+                <article class="article article-4">
+                    <a href="#">
+                        <img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/71nlan-2ya-andrew-neel-2-776x620.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <section class="description">
+                        <h2>Travel Often</h2>
+                        <div class="details-view">
+                            <p>
+                                Ginger is a flowering plant whose rhizome,
+                                ginger root or ginger, is widely used as a spice
+                                and a folk medicine.
+                            </p>
+                            <button type="button">Move to top</button>
+                        </div>
+                    </section>
+                </article>
+                <article class="details article article-5" style="--max: 1">
+                    <a href="#">
+                        <img
+                            src="https://images.unsplash.com/photo-1483794344563-d27a8d18014e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDg2NDUzOA&ixlib=rb-1.2.1&q=85&w=600"
+                            alt=""
+                        />
+                    </a>
+                    <section class="description">
+                        <h2>Another Plant?</h2>
+                        <div
+                            class="details-view"
+                            style="opacity: 1; transform: translateY(0)"
+                        >
+                            <p>
+                                Ginger is a flowering plant whose rhizome,
+                                ginger root or ginger, is widely used as a spice
+                                and a folk medicine.
+                            </p>
+                            <button type="button">Move to top</button>
+                        </div>
+                    </section>
+                </article>
+                <article class="article article-6">
+                    <a href="#">
+                        <img
+                            src="https://images.unsplash.com/photo-1557180295-76eee20ae8aa?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDc5NDc2Mw&ixlib=rb-1.2.1&q=85&w=600"
+                            alt=""
+                        />
+                    </a>
+                    <section class="description">
+                        <h2>On the Wave</h2>
+                        <div class="details-view">
+                            <p>
+                                Ginger is a flowering plant whose rhizome,
+                                ginger root or ginger, is widely used as a spice
+                                and a folk medicine.
+                            </p>
+                            <button type="button">Move to top</button>
+                        </div>
+                    </section>
+                </article>
+                <article class="article article-7">
+                    <a href="#">
+                        <img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/typewriter-1-776x968.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <section class="description">
+                        <h2>Great Gatsby</h2>
+                        <div class="details-view">
+                            <p>
+                                Ginger is a flowering plant whose rhizome,
+                                ginger root or ginger, is widely used as a spice
+                                and a folk medicine.
+                            </p>
+                            <button type="button">Move to top</button>
+                        </div>
+                    </section>
+                </article>
+                <article class="article article-8">
+                    <a href="#">
+                        <img
+                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/xohlruw4k8-christelle-bourgeois-776x758.jpg"
+                            alt=""
+                        />
+                    </a>
+                    <section class="description">
+                        <h2>In the Sun</h2>
+                        <div class="details-view">
+                            <p>
+                                Ginger is a flowering plant whose rhizome,
+                                ginger root or ginger, is widely used as a spice
+                                and a folk medicine.
+                            </p>
+                            <button type="button">Move to top</button>
+                        </div>
+                    </section>
+                </article>
+            </div>
+            <div>Made wih ♥ by Naman</div>
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/Flip.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
